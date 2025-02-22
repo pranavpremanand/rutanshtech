@@ -21,7 +21,7 @@ const AllServices = ({ length }) => {
               className="group md:w-[calc(100%/2-2rem)] lg:w-[calc(100%/3-2rem)]"
               data-aos="fade-up"
             >
-              <div className="border border-primary p-6 rounded-2xl space-y-3 hover:-translate-y-1 transition-all duration-300 hover:shadow-large hover:shadow-primary/50 h-full">
+              <div className="border border-primary p-6 rounded-2xl grid grid-cols-1 gap-3 hover:-translate-y-1 transition-all duration-300 hover:shadow-large hover:shadow-primary/50 h-full">
                 <div className="aspect-video rounded-xl overflow-hidden">
                   <img
                     loading="lazy"
@@ -32,6 +32,17 @@ const AllServices = ({ length }) => {
                 </div>
                 <h4 className="text3">{item.title}</h4>
                 <p className="desc">{item.desc}</p>
+                {item.link && (
+                  <div className="pt-5">
+                    <Link
+                      className="btn-rounded border border-primary text-white hover:bg-primary"
+                      to={item.link}
+                      target="_blank"
+                    >
+                      Know More
+                    </Link>
+                  </div>
+                )}
               </div>
             </div>
           ))}

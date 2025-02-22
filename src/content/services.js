@@ -4,12 +4,14 @@ export const allServices = [
     title: "Full-Stack Web Development",
     image: require("../assets/images/services/web-development.webp"),
     desc: "Our web development team crafts modern, responsive websites and full-stack solutions that elevate your online presence and engage your audience.",
+    link:"/web-development"
   },
   {
     id: 2,
     title: "App Development",
     image: require("../assets/images/services/app-development.webp"),
     desc: "Our team designs and builds innovative mobile apps tailored to your audience, delivering functionality  and an exceptional user experience.",
+    link:"/app-development"
   },
   {
     id: 3,
