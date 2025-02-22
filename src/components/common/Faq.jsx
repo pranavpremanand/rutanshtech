@@ -1,0 +1,76 @@
+import SubHeading from "./SubHeading";
+import img from "../../assets/images/faq.webp";
+import { faqs } from "../../content/constant";
+import { MdOutlineKeyboardArrowUp } from "react-icons/md";
+import { useState } from "react";
+import ArrowButton from "./ArrowButton";
+
+const Faq = () => {
+  const [isActive, setIsActive] = useState(1);
+  return (
+    <div className="py-7">
+      <div className="wrapper space-y-5">
+        <div>
+          <SubHeading
+            heading="Frequently Asked Questions"
+            className="text-primary"
+          />
+        </div>
+        <h2 className="text1 max-w-xl">
+          Transforming Vision into Reality Together
+        </h2>
+        <div className="grid md:grid-cols-[45%_1fr] gap-7">
+          <div className="flex flex-col rounded-xl overflow-hidden">
+            <img
+              loading="lazy"
+              src={img}
+              className="w-full aspect-[16/12] md:aspect-square md:h-full object-cover rounded-xl"
+              alt="FAQ"
+            />
+          </div>
+          <div className="space-y-3">
+            {faqs.map((item) => (
+              <div
+                onClick={() => setIsActive(item.id)}
+                key={item.id}
+                className="cursor-pointer p-4 rounded-lg bg-[#202022]"
+              >
+                <div className="flex justify-between gap-2">
+                  <p className="text4">{item.question}</p>
+                  <div className="w-8 h-8 rounded-full min-w-8 border border-white flex items-center justify-center">
+                    <MdOutlineKeyboardArrowUp
+                      className={
+                        isActive === item.id &&
+                        "rotate-180 transition-all duration-300"
+                      }
+                      size={20}
+                    />
+                  </div>
+                </div>
+                <p
+                  className={`${
+                    isActive === item.id
+                      ? "max-h-[500px] opacity-100"
+                      : "max-h-0 opacity-0"
+                  } transition-all duration-300`}
+                >
+                  {item.answer}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="pt-7">
+          <ArrowButton
+            to="/contact-us"
+            className="bg-black border border-primary text-white hover:bg-primary !w-fit mx-auto"
+          >
+            Have More Questions? Contact Us
+          </ArrowButton>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Faq;
