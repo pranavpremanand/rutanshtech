@@ -1,4 +1,4 @@
-import banner from "../assets/videos/contactus.webm";
+import banner from "../assets/videos/contactus.mp4";
 import { FaGlobe } from "react-icons/fa";
 import { companyDetails } from "../content/constant";
 import { PiPhoneCallFill } from "react-icons/pi";

@@ -1,5 +1,5 @@
 import ReactPlayer from "react-player";
-import bannerVid from "../assets/videos/banner.webm";
+import bannerVid from "../assets/videos/banner.mp4";
 import SubHeading from "../components/common/SubHeading";
 import ArrowButton from "../components/common/ArrowButton";
 import { Link } from "react-router-dom";

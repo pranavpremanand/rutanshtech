@@ -1,5 +1,5 @@
 import React from "react";
-import banner from "../assets/videos/services.webm";
+import banner from "../assets/videos/services.mp4";
 import { lazy } from "react";
 import ArrowButton from "../components/common/ArrowButton";
 const PageBanner = lazy(() => import("../components/website/PageBanner"));

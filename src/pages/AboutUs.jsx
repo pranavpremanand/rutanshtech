@@ -1,9 +1,9 @@
-import banner from "../assets/videos/aboutus.webm";
+import banner from "../assets/videos/aboutus.mp4";
 import CountUp from "react-countup";
 import aboutUsImg from "../assets/images/about-us.png";
 import SubHeading from "../components/common/SubHeading";
 import { Link } from "react-router-dom";
-import ourVisionImg from "../assets/images/our vision 1.png";
+import ourVisionImg from "../assets/images/our vision.webp";
 import ourMissionImg from "../assets/images/our mission.png";
 import whyWeExistImg from "../assets/images/why we exist.png";
 import OurCoreValues from "../components/website/OurCoreValues";
@@ -102,7 +102,7 @@ const AboutUs = () => {
           <img
             loading="lazy"
             src={ourVisionImg}
-            className="object-contain aspect-video h-full w-full rounded-md"
+            className="object-cover aspect-video h-full w-full rounded-md"
             alt=""
           />
           <div className="space-y-6">
