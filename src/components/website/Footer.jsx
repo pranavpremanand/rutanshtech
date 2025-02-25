@@ -114,7 +114,7 @@ const Footer = () => {
                 {allServices.map((link) => (
                   <li key={link.id}>
                     <Link
-                      to={`/services/${createUrlParam(link.title)}`}
+                      // to={`/services/${createUrlParam(link.title)}`}
                       className="link text-sm"
                     >
                       {link.title}
