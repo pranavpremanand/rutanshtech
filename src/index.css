@@ -27,16 +27,16 @@ html {
     @apply text-[2rem] sm:text-[3.5rem] font-bold leading-tight;
   }
   .text2 {
-    @apply text-[1.25rem] sm:text-[2.5rem] font-semibold leading-tight;
+    @apply text-[1.35rem] sm:text-[2.5rem] font-semibold leading-tight;
   }
   .text3 {
-    @apply text-[1.10rem] sm:text-[1.30rem] font-semibold leading-tight;
+    @apply text-[1.20rem] sm:text-[1.30rem] font-semibold leading-tight;
   }
   .text4 {
-    @apply text-[1.05rem] sm:text-[1.10rem] font-semibold leading-tight;
+    @apply text-[1.15rem] sm:text-[1.25rem] font-semibold leading-tight;
   }
   .desc {
-    @apply text-lg leading-relaxed;
+    @apply text-base leading-relaxed;
   }
   .btn-fullrounded {
     @apply cursor-pointer p-3 text-sm text-center rounded-full transition-all duration-300;
