@@ -31,13 +31,13 @@ const WhyWorkWithUs = () => {
       },
       "(min-width: 900px)": {
         slides: {
-          perView: 3,
+          perView: 3.5,
           spacing: 20,
         },
       },
       "(min-width: 1280px)": {
         slides: {
-          perView: 4,
+          perView: 5,
           spacing: 25,
         },
       },
@@ -77,9 +77,9 @@ const WhyWorkWithUs = () => {
         </p>
       </div>
       <div ref={sliderRef} className="keen-slider py-10">
-        {whyworkwithus.map((item) => (
+        {whyworkwithus.concat(whyworkwithus).map((item) => (
           <div
-            key={item.id}
+            key={Math.random(100)}
             className="keen-slider__slide w-full rounded-xl overflow-hidden border border-secondary"
           >
             <img

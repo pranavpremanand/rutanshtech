@@ -3,9 +3,9 @@ import CountUp from "react-countup";
 import aboutUsImg from "../assets/images/about-us.png";
 import SubHeading from "../components/common/SubHeading";
 import { Link } from "react-router-dom";
-import ourVisionImg from "../assets/images/our vision.webp";
-import ourMissionImg from "../assets/images/our mission.webp";
-import whyWeExistImg from "../assets/images/why we exist.webp";
+import ourVisionImg from "../assets/images/our vision 1.png";
+import ourMissionImg from "../assets/images/our mission.png";
+import whyWeExistImg from "../assets/images/why we exist.png";
 import OurCoreValues from "../components/website/OurCoreValues";
 import { lazy } from "react";
 const PageBanner = lazy(() => import("../components/website/PageBanner"));
@@ -36,7 +36,7 @@ const AboutUs = () => {
                 Progress and innovation
               </span>
             </h2>
-            <p data-aos="fade-up" className="desc ">
+            <p data-aos="fade-up" className="desc text-white/70">
               Rutansh Technologies is more than just a technology company — we
               are your partner in progress. Founded with a vision to redefine
               possibilities through future-driven innovation, we specialize in
@@ -49,7 +49,10 @@ const AboutUs = () => {
               we’re focused on delivering value, empowering our clients to
               thrive in a constantly evolving digital world.
             </p>
-            <div data-aos="fade-up" className="grid sm:grid-cols-2 gap-7 py-4">
+            <div
+              data-aos="fade-up"
+              className="grid sm:grid-cols-2 gap-7 py-4 text-white/70"
+            >
               <div className="flex items-center gap-2">
                 <div className="w-[1rem] h-[1rem] rounded-full bg-white"></div>
                 <p className="capitalize">Innovating for Tomorrow</p>
@@ -82,7 +85,9 @@ const AboutUs = () => {
                       duration={2}
                     />
                   </span>
-                  <p className="uppercase text-sm">{item.title}</p>
+                  <p className="uppercase text-sm text-white/70">
+                    {item.title}
+                  </p>
                 </div>
               ))}
             </div>
@@ -92,12 +97,12 @@ const AboutUs = () => {
       <section className="bg-[#F0F0F0] text-black">
         <div
           data-aos="fade-up"
-          className="wrapper py-8 px-3 grid md:grid-cols-[45%_1fr] gap-7"
+          className="wrapper py-8 px-3 grid md:grid-cols-[45%_1fr] gap-7 md:gap-16"
         >
           <img
             loading="lazy"
             src={ourVisionImg}
-            className="object-cover aspect-video h-full w-full rounded-md"
+            className="object-contain aspect-video h-full w-full rounded-md"
             alt=""
           />
           <div className="space-y-6">
@@ -122,7 +127,7 @@ const AboutUs = () => {
         </div>
       </section>
       <section className="wrapper pt-14">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-16">
           <div data-aos="fade-up" className="space-y-4">
             <h3 className="text2 text-primary">
               Our <br /> Mission
@@ -130,7 +135,7 @@ const AboutUs = () => {
             <img
               loading="lazy"
               src={ourMissionImg}
-              className="md:hidden block object-cover aspect-video h-fit w-full rounded-sm"
+              className="md:hidden block object-cover aspect-[6/4] h-fit w-full rounded-sm"
               alt="Our Vision"
             />
             <p className="desc !text-white">
@@ -150,20 +155,20 @@ const AboutUs = () => {
             loading="lazy"
             data-aos="fade-up"
             src={ourMissionImg}
-            className="hidden md:block object-cover aspect-video h-full w-full rounded-xl"
+            className="hidden md:block object-cover aspect-[6/4] h-full w-full rounded-xl"
             alt="Our Vision"
           />
         </div>
       </section>
       <OurCoreValues />
       <section className="pt-7 wrapper space-y-5">
-        <div className="grid md:grid-cols-2 gap-7">
+        <div className="grid md:grid-cols-2 gap-7 md:gap-14">
           <div className="flex flex-col overflow-hidden rounded-xl">
             <img
               loading="lazy"
               src={whyWeExistImg}
               alt="Why we exist"
-              className="sm:aspect-[2/1] w-full object-cover h-full"
+              className="aspect-[6/4] w-full object-cover h-full"
             />
           </div>
           <div className="space-y-3">
@@ -173,9 +178,9 @@ const AboutUs = () => {
               need a technology partner they can trust to navigate this change.
               Rutansh Technologies exists to fill that role — to provide
               businesses with the tools they need to innovate, grow, and succeed
-              in a secure scalable-manner. <br /> Whether it's a mobile app that
-              engages customers on the go, a web platform that enhances your
-              digital presence, or an AI tool that automates complex tasks,
+              in a secure scalable-manner. <br /> <br /> Whether it's a mobile
+              app that engages customers on the go, a web platform that enhances
+              your digital presence, or an AI tool that automates complex tasks,
               Rutansh Technologies is here to deliver solutions that
               drive-real-world-results.
             </p>

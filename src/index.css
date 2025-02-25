@@ -36,7 +36,7 @@ html {
     @apply text-[1.05rem] sm:text-[1.10rem] font-semibold leading-tight;
   }
   .desc {
-    @apply text-base leading-relaxed;
+    @apply text-lg leading-relaxed;
   }
   .btn-fullrounded {
     @apply cursor-pointer p-3 text-sm text-center rounded-full transition-all duration-300;

@@ -41,14 +41,14 @@ const ContactForm = () => {
             <div>
               <input
                 type="text"
-                className="bg-[#333333] p-2 rounded-md w-full outline-none"
+                className="bg-[#333333] p-3 rounded-md w-full outline-none"
                 placeholder="Name"
               />
             </div>
             <div>
               <input
                 type="email"
-                className="bg-[#333333] p-2 rounded-md w-full outline-none"
+                className="bg-[#333333] p-3 rounded-md w-full outline-none"
                 placeholder="Email"
               />
             </div>
@@ -56,26 +56,26 @@ const ContactForm = () => {
           <div>
             <input
               type="tel"
-              className="bg-[#333333] p-2 rounded-md w-full outline-none"
+              className="bg-[#333333] p-3 rounded-md w-full outline-none"
               placeholder="Phone Number"
             />
           </div>
           <div>
             <input
               type="text"
-              className="bg-[#333333] p-2 rounded-md w-full outline-none"
+              className="bg-[#333333] p-3 rounded-md w-full outline-none"
               placeholder="Subject"
             />
           </div>
           <div>
             <textarea
               rows="5"
-              className="bg-[#333333] p-2 rounded-md w-full outline-none"
+              className="bg-[#333333] p-3 rounded-md w-full outline-none"
               placeholder="How can we help?"
             />
           </div>
           <button className="w-full btn-rounded bg-primary text-white hover:bg-black border border-primary">
-            Submit
+            Send Now
           </button>
         </div>
       </div>

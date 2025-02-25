@@ -20,7 +20,11 @@ const Faq = () => {
           Transforming Vision into Reality Together
         </h2>
         <div className="grid md:grid-cols-[45%_1fr] gap-7">
-          <div className="flex flex-col rounded-xl overflow-hidden">
+          <div className="flex flex-col rounded-xl overflow-hidden relative">
+            <div className="absolute z-[1] right-2 top-2 bg-white text-primary p-5 rounded-[1rem] shadow-xl flex items-center gap-3">
+              <h2 className="text2 !font-bold">1.5k+</h2>
+              <p className="desc !text-base max-w-[5rem] !leading-tight"> Satisfied Clients Globally</p>
+            </div>
             <img
               loading="lazy"
               src={img}
@@ -28,7 +32,7 @@ const Faq = () => {
               alt="FAQ"
             />
           </div>
-          <div className="space-y-3">
+          <div className="space-y-4 md:space-y-6">
             {faqs.map((item) => (
               <div
                 onClick={() => setIsActive(item.id)}
@@ -63,7 +67,7 @@ const Faq = () => {
         <div className="pt-7">
           <ArrowButton
             to="/contact-us"
-            className="bg-black border border-primary text-white hover:bg-primary !w-fit mx-auto"
+            className="bg-black border border-secondary text-white hover:bg-secondary !w-fit mx-auto"
           >
             Have More Questions? Contact Us
           </ArrowButton>

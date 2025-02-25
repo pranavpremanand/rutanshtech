@@ -38,7 +38,7 @@ const PageBanner = ({ banner, title, links }) => {
           },
         }}
       />
-      <div className="absolute inset-0 bg-black/60 z-[2] flex items-center">
+      <div className="absolute inset-0 text-white bg-black/50 z-[2] flex items-center">
         <div className="wrapper w-full grid grid-cols-[10%,1fr,10%] items-center h-full relative top-1/2 -translate-y-[50%]">
           <div className="flex flex-col gap-5 sm:gap-7">
             <Link className="w-[1.75rem] h-[1.75rem] bg-white rounded-full text-black hover:bg-tertiary hover:text-primary transition duration-200 flex justify-center items-center">
@@ -55,6 +55,7 @@ const PageBanner = ({ banner, title, links }) => {
             </Link>
           </div>
           <div className="w-full text-center flex justify-center flex-col items-center sm:translate-y-[10%]">
+            <h1 className="text1 !font-medium">{title}</h1>
             <div className="flex items-center gap-2 mt-3 z-10">
               {links.map((link) => (
                 <div
@@ -73,10 +74,9 @@ const PageBanner = ({ banner, title, links }) => {
                 </div>
               ))}
             </div>
-            <h1 className="text1">{title}</h1>
           </div>
           <div className="rotate-90 w-full flex justify-center">
-            <div className="text-lg min-w-[12rem] flex justify-center">
+            <div className="text-lg min-w-[12rem] -translate-y-[1rem] md:-translate-y-[2rem] lg:-translate-y-[3rem] flex justify-center">
               <Link
                 to={`tel:${companyDetails.phone}`}
                 className="link flex items-center gap-2"

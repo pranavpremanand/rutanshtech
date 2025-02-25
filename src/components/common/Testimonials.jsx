@@ -64,7 +64,7 @@ const Testimonials = () => {
         <div data-aos="fade-up">
           <SubHeading heading="Testimonials" className="text-primary" />
         </div>
-        <h2 data-aos="fade-up" className="text1 text-center max-w-4xl mx-auto">
+        <h2 data-aos="fade-up" className="text1 text-center max-w-2xl mx-auto">
           What Our Clients Say Trusted by Businesses Worldwide
         </h2>
         <div
@@ -98,13 +98,13 @@ const Testimonials = () => {
               <button onClick={handlePrevClick}>
                 <GoArrowLeft
                   size={30}
-                  className="fill-white hover:fill-white/50"
+                  className="fill-[#9347fd] hover:fill-white"
                 />
               </button>
               <button onClick={handleNextClick}>
                 <GoArrowRight
                   size={30}
-                  className="fill-white hover:fill-white/50"
+                  className="fill-[#9347fd] hover:fill-white"
                 />
               </button>
             </div>

@@ -11,7 +11,7 @@ import { FaXTwitter } from "react-icons/fa6";
 const Footer = () => {
   return (
     <div className="pt-7">
-      <div className="wrapper bg-white text-black rounded-2xl !p-5 sm:py-8 md:!px-10 translate-y-8">
+      <div className="wrapper bg-white text-black rounded-2xl !p-5 sm:!py-8 md:!px-10 translate-y-8">
         <div className="grid md:grid-cols-2 gap-4 items-center">
           <div className="space-y-1">
             <h4 className="text2 text-primary text-center md:text-start">
@@ -22,7 +22,7 @@ const Footer = () => {
             </p>
           </div>
           <div className="flex justify-end">
-            <div className="p-1 rounded-full border border-black w-full md:max-w-sm flex justify-between items-center gap-3">
+            <div className="p-2 rounded-full border border-black w-full md:max-w-sm flex justify-between items-center gap-3">
               <input
                 type="email"
                 className="outline-none bg-transparent md:max-w-xl w-full px-4"
@@ -94,11 +94,11 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="md:col-span-2 lg:col-span-1 space-y-3">
+            <div className="md:col-span-2 lg:col-span-1 space-y-6">
               <h5 className="text4 underline underline-offset-4">
                 About Company
               </h5>
-              <ul className="flex flex-col gap-2 list-disc pl-5">
+              <ul className="flex flex-col gap-3 list-disc pl-5">
                 {websiteLinks.map((link) => (
                   <li key={link.id}>
                     <Link to={link.url} className="link text-sm">
@@ -108,9 +108,9 @@ const Footer = () => {
                 ))}
               </ul>
             </div>
-            <div className="md:col-span-2 lg:col-span-1 space-y-3">
+            <div className="md:col-span-2 lg:col-span-1 space-y-6">
               <h5 className="text4 underline underline-offset-4">Expertise</h5>
-              <ul className="flex flex-col gap-2 list-disc pl-5">
+              <ul className="flex flex-col gap-3 list-disc pl-5">
                 {allServices.map((link) => (
                   <li key={link.id}>
                     <Link
@@ -123,9 +123,9 @@ const Footer = () => {
                 ))}
               </ul>
             </div>
-            <div className="md:col-span-2 lg:col-span-1 space-y-3">
+            <div className="md:col-span-2 lg:col-span-1 space-y-6">
               <h5 className="text4 underline underline-offset-4">Our Office</h5>
-              <ul className="flex flex-col gap-2 list-disc pl-5">
+              <ul className="flex flex-col gap-3">
                 <li className="text-sm">
                   <Link to={`tel:${companyDetails.phone}`} className="link">
                     {companyDetails.phone}
@@ -142,8 +142,8 @@ const Footer = () => {
           </div>
           <hr className="border-white/20" />
           <p className="text-sm text-center">
-            Copyright © {new Date().getFullYear()} Rutansh Technologies LLP| All
-            Rights Reserved | Privacy Policy
+            Copyright © {new Date().getFullYear()} Rutansh Technologies LLP | All
+            Rights Reserved
           </p>
         </div>
       </div>

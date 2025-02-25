@@ -60,7 +60,7 @@ const Home = () => {
               Your Technology Partner for{" "}
               <span className="text-primary">Innovation and Growth</span>
             </h1>
-            <p className="desc">Transcending Limits, Transforming Futures</p>
+            <p className="desc !text-xl">Transcending Limits, Transforming Futures</p>
             <div className="pt-10 flex sm:flex-row flex-col items-center gap-2">
               <ArrowButton
                 to="/contact-us"
@@ -106,9 +106,9 @@ const Home = () => {
 
       <section className="pb-14 wrapper space-y-3">
         <div data-aos="fade-up" className="flex justify-center">
-          <SubHeading heading="About Us" className="text-primary" />
+          <SubHeading heading="About Us" className="text-white" />
         </div>
-        <div className="grid md:grid-cols-[40%,1fr] gap-7">
+        <div className="grid md:grid-cols-[40%,1fr] gap-10">
           <div className="relative w-full rounded-[3rem] overflow-hidden">
             <img
               loading="lazy"
@@ -121,15 +121,15 @@ const Home = () => {
               data-aos="fade-right"
               className="absolute left-4 bottom-5 bg-primary text-white p-5 rounded-[1.5rem] shadow-xl text-center"
             >
-              <h2 className="text2">100%</h2>
-              <p className="desc">Success Rate</p>
+              <h2 className="text2 !font-bold">100%</h2>
+              <p className="desc !text-base">Success Rate</p>
             </div>
           </div>
           <div data-aos="fade-up" className="space-y-3">
             <h2 className="text1">
               Empowering Businesses to Transcend Limits and Shape the Future
             </h2>
-            <p className="desc">
+            <p className="desc text-white/70">
               At Rutansh Technologies, we are dedicated to delivering
               transformative, secure, and future-ready technology solutions.
               Whether it’s crafting high performance mobile app, advanced AI

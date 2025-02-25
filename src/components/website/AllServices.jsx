@@ -2,6 +2,7 @@ import React from "react";
 import SubHeading from "../common/SubHeading";
 import { allServices } from "../../content/services";
 import { Link } from "react-router-dom";
+import { MdArrowOutward } from "react-icons/md";
 
 const AllServices = ({ length }) => {
   const services = allServices.slice(0, length);
@@ -35,11 +36,11 @@ const AllServices = ({ length }) => {
                 {item.link && (
                   <div className="pt-5">
                     <Link
-                      className="btn-rounded border border-primary text-white hover:bg-primary"
+                      className="btn-rounded !p-1 border border-white text-white hover:bg-white hover:text-black flex items-center gap-2 w-fit"
                       to={item.link}
                       target="_blank"
                     >
-                      Know More
+                      Learn More <MdArrowOutward size={20}/>
                     </Link>
                   </div>
                 )}

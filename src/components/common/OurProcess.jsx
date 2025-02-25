@@ -32,13 +32,13 @@ const OurProcess = () => {
       <div className="wrapper">
         <div
           data-aos="fade-up"
-          className="grid md:grid-cols-[55%,1fr] items-center gap-6"
+          className="grid md:grid-cols-[55%,1fr] items-center gap-6 md:gap-16"
         >
           <div className="space-y-3">
             <SubHeading heading="Our Process" className="text-primary" />
             <h2 className="text1">Transforming Concepts into Success</h2>
           </div>
-          <p className="desc">
+          <p className="desc text-white/70">
             Our process ensures outstanding outcomes through a smooth and
             efficient journey. From initial discovery and design to development,
             testing, and final launch, we execute each phase with meticulous

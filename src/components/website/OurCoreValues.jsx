@@ -94,7 +94,7 @@ const OurCoreValues = () => {
         <div className="flex justify-center w-full">
           <ArrowButton
             to="/contact-us"
-            className="bg-black border border-primary text-white hover:bg-primary !w-fit"
+            className="bg-black border border-secondary text-white hover:bg-secondary !w-fit"
           >
             Let’s Partner for Success
           </ArrowButton>
