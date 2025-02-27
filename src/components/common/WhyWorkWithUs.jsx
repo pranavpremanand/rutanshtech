@@ -67,7 +67,7 @@ const WhyWorkWithUs = () => {
   return (
     <div className="py-14">
       <div className="wrapper flex flex-col items-center gap-3">
-        <SubHeading heading="Why Work With Us" className="text-primary" />
+        <SubHeading heading="Why Work With Us" className="text-white" />
         <h2 className="text1 text-center max-w-3xl mx-auto">
           Partner With Us for Exceptional Results
         </h2>

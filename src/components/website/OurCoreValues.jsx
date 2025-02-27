@@ -3,7 +3,8 @@ import SubHeading from "../common/SubHeading";
 import { coreValues } from "../../content/constant";
 import { useKeenSlider } from "keen-slider/react";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
-import { ReactComponent as Icon } from "../../assets/svg/core values icon.svg";
+// import { ReactComponent as Icon } from "../../assets/svg/core values icon.svg";
+import icon from "../../assets/images/core values icon.png";
 import ArrowButton from "../common/ArrowButton";
 
 const animation = { duration: 40000, easing: (t) => t };
@@ -69,7 +70,7 @@ const OurCoreValues = () => {
   return (
     <div className="py-14 space-y-4">
       <div className="wrapper flex flex-col items-center gap-4">
-        <SubHeading heading="Our Core Values" className="text-primary" />
+        <SubHeading heading="Our Core Values" className="text-white" />
         <h2 className="text1 max-w-2xl text-center mx-auto">
           Innovation Moves You Forward
         </h2>
@@ -84,7 +85,7 @@ const OurCoreValues = () => {
             key={item.title}
             className="keen-slider__slide w-full rounded-xl bg-white px-4 pb-4 pt-5 space-y-5"
           >
-            <Icon className="fill-primary w-12 h-12" />
+            <img src={icon} alt="" className="fill-primary w-12 h-12 object-contain" />
             <h4 className="text3">{item.title}</h4>
             <p className="desc">{item.desc}</p>
           </div>

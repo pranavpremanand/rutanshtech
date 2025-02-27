@@ -26,7 +26,7 @@ const process = [
   },
 ];
 
-const OurProcess = () => {
+const OurProcess = ({ showButton }) => {
   return (
     <div className="py-7">
       <div className="wrapper">
@@ -35,7 +35,7 @@ const OurProcess = () => {
           className="grid md:grid-cols-[55%,1fr] items-center gap-6 md:gap-16"
         >
           <div className="space-y-3">
-            <SubHeading heading="Our Process" className="text-primary" />
+            <SubHeading heading="Our Process" className="text-white" />
             <h2 className="text1">Transforming Concepts into Success</h2>
           </div>
           <p className="desc text-white/70">
@@ -80,14 +80,16 @@ const OurProcess = () => {
             alt="Arrow"
           />
         </div>
-        <div data-aos="fade-up" className="pt-8 sm:pt-24">
-          <ArrowButton
-            to="/services"
-            className="bg-black border border-primary text-white hover:bg-primary !w-fit mx-auto"
-          >
-            Let’s Build Your Success Together
-          </ArrowButton>
-        </div>
+        {showButton && (
+          <div data-aos="fade-up" className="pt-8 sm:pt-24">
+            <ArrowButton
+              to="/services"
+              className="bg-black border border-primary text-white hover:bg-primary !w-fit mx-auto"
+            >
+              Let’s Build Your Success Together
+            </ArrowButton>
+          </div>
+        )}
       </div>
     </div>
   );

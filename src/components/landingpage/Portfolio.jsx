@@ -11,7 +11,7 @@ const Portfolio = ({ page }) => {
   return (
     <div className="wrapper py-10 space-y-4">
       <div className='flex flex-col items-center'>
-        <SubHeading heading="Portfolio" className="text-primary" />
+        <SubHeading heading="Portfolio" className="text-white" />
         <h2 data-aos="fade-up" className="text1 text-center">
           Few of Our Projects
         </h2>

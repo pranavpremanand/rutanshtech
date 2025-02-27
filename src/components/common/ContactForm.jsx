@@ -9,7 +9,7 @@ const ContactForm = () => {
     <section id="contact" className="py-14">
       <div className="wrapper grid md:grid-cols-[55%,1fr] gap-8 md:gap-6">
         <div className="space-y-4">
-          <SubHeading heading="Contact Us" className="text-primary" />
+          <SubHeading heading="Contact Us" className="text-white" />
           <h2 className="text1">Let’s Build the Future Together</h2>
           <p className="desc text-white/70">
             we believe in transcending limits and crafting future-ready,

@@ -2,7 +2,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 const CircularText = () => {
   return (
-    <div className="relative w-32 min-w-32 h-32 flex items-center justify-center bg-black rounded-full animate-spinner">
+    <div className="relative w-36 min-w-36 h-36 flex items-center justify-center bg-black rounded-full animate-spinner">
       {/* Circle with Text */}
       <svg viewBox="0 0 200 200" className="absolute w-full h-full p-2">
         <defs>
@@ -14,15 +14,15 @@ const CircularText = () => {
                a 75,75 0 1,1 -150,0"
           />
         </defs>
-        <text fill="white" className="text-[2rem] font-bold tracking-widest">
+        <text fill="white" className="text-[2.2rem] tracking-[.5rem]">
           <textPath href="#circlePath" textAnchor="middle" startOffset="50%">
-            Working Since 2007 Best
+            Driving Future Tech
           </textPath>
         </text>
       </svg>
 
       {/* Arrow Icon */}
-      <IoIosArrowRoundForward size={50} className="text-[#0021f5]" />
+      <IoIosArrowRoundForward size={50} className="text-primary" />
     </div>
   );
 };

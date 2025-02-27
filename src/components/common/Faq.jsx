@@ -5,16 +5,13 @@ import { MdOutlineKeyboardArrowUp } from "react-icons/md";
 import { useState } from "react";
 import ArrowButton from "./ArrowButton";
 
-const Faq = () => {
+const Faq = ({ showButton }) => {
   const [isActive, setIsActive] = useState(1);
   return (
     <div className="py-7">
       <div className="wrapper space-y-5">
         <div>
-          <SubHeading
-            heading="Frequently Asked Questions"
-            className="text-primary"
-          />
+          <SubHeading heading="Asked Questions" className="text-white" />
         </div>
         <h2 className="text1 max-w-xl">
           Transforming Vision into Reality Together
@@ -23,7 +20,10 @@ const Faq = () => {
           <div className="flex flex-col rounded-xl overflow-hidden relative">
             <div className="absolute z-[1] right-2 top-2 bg-white text-primary p-5 rounded-[1rem] shadow-xl flex items-center gap-3">
               <h2 className="text2 !font-bold">1.5k+</h2>
-              <p className="desc !text-base max-w-[5rem] !leading-tight"> Satisfied Clients Globally</p>
+              <p className="desc !text-base max-w-[5rem] !leading-tight">
+                {" "}
+                Satisfied Clients Globally
+              </p>
             </div>
             <img
               loading="lazy"
@@ -64,14 +64,16 @@ const Faq = () => {
             ))}
           </div>
         </div>
-        <div className="pt-7">
-          <ArrowButton
-            to="/contact-us"
-            className="bg-black border border-secondary text-white hover:bg-secondary !w-fit mx-auto"
-          >
-            Have More Questions? Contact Us
-          </ArrowButton>
-        </div>
+        {showButton && (
+          <div className="pt-7">
+            <ArrowButton
+              to="/contact-us"
+              className="bg-black border border-secondary text-white hover:bg-secondary !w-fit mx-auto"
+            >
+              Have More Questions? Contact Us
+            </ArrowButton>
+          </div>
+        )}
       </div>
     </div>
   );

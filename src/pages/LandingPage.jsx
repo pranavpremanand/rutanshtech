@@ -2,7 +2,7 @@ import ReactPlayer from "react-player";
 import bannerVid from "../assets/videos/banner.mp4";
 import SubHeading from "../components/common/SubHeading";
 import ArrowButton from "../components/common/ArrowButton";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import CircularText from "../components/common/CircularText";
 import heroImg from "../assets/images/home-hero.webp";
 import webAboutImg from "../assets/images/landing page/web-about.webp";
@@ -27,7 +27,7 @@ const Portfolio = lazy(() => import("../components/landingpage/Portfolio"));
 const LandingPage = ({ page }) => {
   const isWeb = page === "web";
   return (
-    <div id='hero' className="mt-[4.5rem]">
+    <div id="hero" className="mt-[4.5rem]">
       <section className="relative min-h-screen">
         <div className="absolute inset-0 bg-black/60 z-[2]" />
         <ReactPlayer
@@ -67,7 +67,7 @@ const LandingPage = ({ page }) => {
                   ? "Web Development Experts"
                   : "App Development Specialists"
               }
-              className="text-primary"
+              className="text-white"
             />
             <h1 className="text_xl">
               Empowering Businesses with{" "}
@@ -82,17 +82,28 @@ const LandingPage = ({ page }) => {
             </p>
             <div className="pt-10 flex sm:flex-row flex-col items-center gap-2">
               <ArrowButton
-                to="/contact-us"
+                scrollTo="contact"
+                offset={-100}
                 className="bg-white text-black hover:bg-transparent hover:text-white border border-white"
               >
                 Get A Free Consultation
               </ArrowButton>
-              <Link className="w-full sm:min-w-[10rem] sm:w-auto text-center btn-rounded border border-white text-white bg-transparent hover:bg-white hover:text-black">
+              <Link
+                to="services"
+                offset={-100}
+                smooth
+                duration={500}
+                spy
+                className="w-full sm:min-w-[10rem] sm:w-auto text-center btn-rounded border border-white text-white bg-transparent hover:bg-white hover:text-black"
+              >
                 Explore Our {isWeb ? "Web" : "App"} Services
               </Link>
             </div>
           </div>
-          <div data-aos="zoom-in" className="flex justify-end">
+          <div
+            data-aos="zoom-in"
+            className="flex justify-end sm:self-end sm:pr-[3rem] lg:pr-[8rem]"
+          >
             <CircularText />
           </div>
         </div>
@@ -112,9 +123,10 @@ const LandingPage = ({ page }) => {
           <div className="2xl:absolute right-0 top-1/2 2xl:-translate-y-1/2 p-5 2xl:px-10 2xl:w-2/5">
             <p
               data-aos="fade-left"
-              className="text-lg md:text-2xl !font-normal"
+              className="text-lg md:text-2xl !font-normal text-white/70"
             >
-              Rutansh Technologies empowers businesses with future-ready{" "}
+              <b className="text-white">Rutansh Technologies</b> empowers
+              businesses with future-ready{" "}
               {isWeb
                 ? "web solutions that enhance user engagement and performance."
                 : "app solutions that deliver seamless user experiences and scalability."}{" "}
@@ -128,7 +140,7 @@ const LandingPage = ({ page }) => {
 
       <section id="about" className="pb-14 wrapper space-y-3">
         <div data-aos="fade-up" className="flex justify-center">
-          <SubHeading heading="About Us" className="text-primary" />
+          <SubHeading heading="About Us" className="text-white" />
         </div>
         <div className="grid md:grid-cols-[40%,1fr] gap-7">
           <div className="relative w-full rounded-[3rem] overflow-hidden aspect-[1/1.2]">
@@ -154,7 +166,7 @@ const LandingPage = ({ page }) => {
                 ? "Scalable Web Solutions"
                 : "Innovative Mobile Applications"}
             </h2>
-            <p className="desc">
+            <p className="desc text-white/70">
               At Rutansh Technologies, we are dedicated to delivering
               transformative, secure, and future-ready technology solutions.
               Whether it’s{" "}

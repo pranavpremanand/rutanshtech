@@ -13,7 +13,7 @@ const ServicesSection = ({ page }) => {
     <div id="services" className="py-7">
       <div className="wrapper space-y-4 flex flex-col items-center">
         <div data-aos="fade-up">
-          <SubHeading heading={`Our ${isWeb ? "Web" : "App"} Development Services`} className="text-primary" />
+          <SubHeading heading={`Our ${isWeb ? "Web" : "App"} Development Services`} className="text-white" />
         </div>
         <h2 data-aos="fade-up" className="text1 text-center max-w-3xl mx-auto">
           {isWeb

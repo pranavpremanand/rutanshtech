@@ -3,11 +3,12 @@ import CountUp from "react-countup";
 import aboutUsImg from "../assets/images/about-us.png";
 import SubHeading from "../components/common/SubHeading";
 import { Link } from "react-router-dom";
-import ourVisionImg from "../assets/images/our vision.webp";
+import ourVisionImg from "../assets/images/our vision.png";
 import ourMissionImg from "../assets/images/our mission.png";
 import whyWeExistImg from "../assets/images/why we exist.png";
 import OurCoreValues from "../components/website/OurCoreValues";
 import { lazy } from "react";
+import { FaArrowRightLong } from "react-icons/fa6";
 const PageBanner = lazy(() => import("../components/website/PageBanner"));
 
 const AboutUs = () => {
@@ -29,7 +30,7 @@ const AboutUs = () => {
             />
           </div>
           <div className="space-y-4">
-            <SubHeading heading="Who We Are" className="text-primary" />
+            <SubHeading heading="Who We Are" className="text-white" />
             <h2 data-aos="fade-up" className="text1 capitalize">
               Your Partner in{" "}
               <span className="text-stroke-gray text-stroke-white">
@@ -102,7 +103,7 @@ const AboutUs = () => {
           <img
             loading="lazy"
             src={ourVisionImg}
-            className="object-cover aspect-video h-full w-full rounded-md"
+            className="object-contain aspect-video h-full w-full rounded-md"
             alt=""
           />
           <div className="space-y-6">
@@ -118,9 +119,9 @@ const AboutUs = () => {
             <div>
               <Link
                 to="/contact"
-                className="btn-fullrounded bg-primary text-white hover:bg-primary/80 w-fit capitalize"
+                className="btn-fullrounded flex items-center gap-2 bg-primary text-white hover:bg-primary/80 w-fit capitalize"
               >
-                get in touch
+                get in touch <FaArrowRightLong className="mt-[.15rem]" />
               </Link>
             </div>
           </div>

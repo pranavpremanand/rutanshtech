@@ -62,7 +62,7 @@ const Testimonials = () => {
     <div className="py-7">
       <div className="wrapper flex flex-col gap-3 items-center">
         <div data-aos="fade-up">
-          <SubHeading heading="Testimonials" className="text-primary" />
+          <SubHeading heading="Clients Testimonials" className="text-white" />
         </div>
         <h2 data-aos="fade-up" className="text1 text-center max-w-2xl mx-auto">
           What Our Clients Say Trusted by Businesses Worldwide

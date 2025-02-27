@@ -54,13 +54,15 @@ const Home = () => {
           }}
         />
         <div className="wrapper absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[2] flex flex-col-reverse gap-5 sm:grid grid-cols-[1fr,20%] items-center">
-          <div data-aos="fade-up" className="max-w-[40rem] space-y-1">
-            <SubHeading heading="Growth Accelerator" className="text-primary" />
+          <div data-aos="fade-up" className="max-w-[50rem] space-y-1">
+            <SubHeading heading="Growth Accelerator" className="text-white" />
             <h1 className="text_xl">
-              Your Technology Partner for{" "}
+              Your Technology <br /> Partner for <br />
               <span className="text-primary">Innovation and Growth</span>
             </h1>
-            <p className="desc !text-xl">Transcending Limits, Transforming Futures</p>
+            <p className="desc !text-xl">
+              Transcending Limits, Transforming Futures
+            </p>
             <div className="pt-10 flex sm:flex-row flex-col items-center gap-2">
               <ArrowButton
                 to="/contact-us"
@@ -73,7 +75,10 @@ const Home = () => {
               </Link>
             </div>
           </div>
-          <div data-aos="zoom-in" className="flex justify-end">
+          <div
+            data-aos="zoom-in"
+            className="flex justify-end sm:self-end sm:pr-[3rem] lg:pr-[8rem]"
+          >
             <CircularText />
           </div>
         </div>
@@ -93,12 +98,14 @@ const Home = () => {
           <div className="2xl:absolute right-0 top-1/2 2xl:-translate-y-1/2 p-5 2xl:px-10 2xl:w-2/5">
             <p
               data-aos="fade-left"
-              className="text-lg md:text-2xl !font-normal"
+              className="text-lg md:text-2xl !font-normal text-white/70"
             >
-              Rutansh Technologies empowers businesses with future-ready
-              solutions for the ever-changing digital world. From custom
-              software to Al-driven systems, we transform your vision into
-              reality with precision and innovation.
+              <b className="text-white">Rutansh Technologies</b> empowers
+              businesses with <b className="text-white">future-ready</b>{" "}
+              solutions for the ever-changing digital world. From{" "}
+              <b className="text-white">custom software</b> to{" "}
+              <b className="text-white">AI-driven systems</b>, we transform your
+              vision into reality with precision and innovation.
             </p>
           </div>
         </div>
@@ -171,9 +178,9 @@ const Home = () => {
         </div>
       </section>
       <AllServices length={3} />
-      <OurProcess />
+      <OurProcess showButton={true} />
       <Testimonials />
-      <Faq />
+      <Faq showButton={true} />
       <SlidingComponent />
       <WhyWorkWithUs />
     </div>

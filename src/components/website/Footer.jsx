@@ -3,7 +3,6 @@ import bgImg from "../../assets/images/footer-bg.webp";
 import { companyDetails, logo } from "../../content/constant";
 import { websiteLinks } from "./Header";
 import { allServices } from "../../content/services";
-import { createUrlParam } from "../../utils/helper";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaXTwitter } from "react-icons/fa6";
@@ -56,7 +55,7 @@ const Footer = () => {
                 <div className="flex items-center gap-3 pt-3">
                   <Link
                     to={companyDetails.facebook}
-                    className="w-8 h-8 flex items-center justify-center rounded transition-all duration-300 hover:border-primary border border-white group"
+                    className="w-8 h-8 flex items-center justify-center rounded transition-all duration-300 hover:border-primary group"
                   >
                     <FaFacebookF
                       size={18}
@@ -65,7 +64,7 @@ const Footer = () => {
                   </Link>
                   <Link
                     to={companyDetails.linkedin}
-                    className="w-8 h-8 flex items-center justify-center rounded transition-all duration-300 hover:border-primary border border-white group"
+                    className="w-8 h-8 flex items-center justify-center rounded transition-all duration-300 hover:border-primary group"
                   >
                     <FaLinkedinIn
                       size={18}
@@ -74,7 +73,7 @@ const Footer = () => {
                   </Link>
                   <Link
                     to={companyDetails.instagram}
-                    className="w-8 h-8 flex items-center justify-center rounded transition-all duration-300 hover:border-primary border border-white group"
+                    className="w-8 h-8 flex items-center justify-center rounded transition-all duration-300 hover:border-primary group"
                   >
                     <AiFillInstagram
                       size={18}
@@ -84,7 +83,7 @@ const Footer = () => {
 
                   <Link
                     to={companyDetails.twitter}
-                    className="w-8 h-8 flex items-center justify-center rounded transition-all duration-300 hover:border-primary border border-white group"
+                    className="w-8 h-8 flex items-center justify-center rounded transition-all duration-300 hover:border-primary group"
                   >
                     <FaXTwitter
                       size={18}
