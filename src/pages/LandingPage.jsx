@@ -214,7 +214,7 @@ const LandingPage = ({ page }) => {
       </section>
 
       <ServicesSection page={page} />
-      <Portfolio />
+      <Portfolio page={page} />
       <OurProcess />
       <Testimonials />
       <Faq />
