@@ -98,13 +98,13 @@ const Testimonials = () => {
               <button onClick={handlePrevClick}>
                 <GoArrowLeft
                   size={30}
-                  className="fill-[#9347fd] hover:fill-white"
+                  className="fill-white hover:fill-white/70"
                 />
               </button>
               <button onClick={handleNextClick}>
                 <GoArrowRight
                   size={30}
-                  className="fill-[#9347fd] hover:fill-white"
+                  className="fill-white hover:fill-white/70"
                 />
               </button>
             </div>

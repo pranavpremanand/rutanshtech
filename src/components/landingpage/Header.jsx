@@ -100,7 +100,7 @@ const Header = () => {
               duration={500}
               className="flex items-center gap-2 cursor-pointer"
             >
-              <img src={logo} alt="logo" className="w-[8rem] sm:w-[10rem]" />
+              <img src={logo} alt="logo" className="w-[10rem] sm:w-[12rem]" />
             </Scroll>
 
             {/* Desktop Navigation */}

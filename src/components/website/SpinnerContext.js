@@ -5,13 +5,9 @@ export const SpinnerContext = createContext(null);
 
 const SpinnerContextProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
+
   return (
-    <SpinnerContext.Provider
-      value={{
-        loading,
-        setLoading,
-      }}
-    >
+    <SpinnerContext.Provider value={{ loading, setLoading }}>
       {children}
     </SpinnerContext.Provider>
   );

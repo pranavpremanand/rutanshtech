@@ -41,16 +41,32 @@ const PageBanner = ({ banner, title, links }) => {
       <div className="absolute inset-0 text-white bg-black/50 z-[2] flex items-center">
         <div className="wrapper w-full grid grid-cols-[10%,1fr,10%] items-center h-full relative top-1/2 -translate-y-[50%]">
           <div className="flex flex-col gap-5 sm:gap-7">
-            <Link className="w-[1.75rem] h-[1.75rem] bg-white rounded-full text-black hover:bg-tertiary hover:text-primary transition duration-200 flex justify-center items-center">
+            <Link
+              target="_blank"
+              to={companyDetails.linkedin}
+              className="w-[1.75rem] h-[1.75rem] bg-white rounded-full text-black hover:bg-tertiary hover:text-primary transition duration-200 flex justify-center items-center"
+            >
               <FaLinkedinIn size={17} />
             </Link>
-            <Link className="w-[1.75rem] h-[1.75rem] bg-white rounded-full text-black hover:bg-tertiary hover:text-primary transition duration-200 flex justify-center items-center">
+            <Link
+              target="_blank"
+              to={companyDetails.instagram}
+              className="w-[1.75rem] h-[1.75rem] bg-white rounded-full text-black hover:bg-tertiary hover:text-primary transition duration-200 flex justify-center items-center"
+            >
               <AiFillInstagram size={18} />
             </Link>
-            <Link className="w-[1.75rem] h-[1.75rem] bg-white rounded-full text-black hover:bg-tertiary hover:text-primary transition duration-200 flex justify-center items-center">
+            <Link
+              target="_blank"
+              to={companyDetails.facebook}
+              className="w-[1.75rem] h-[1.75rem] bg-white rounded-full text-black hover:bg-tertiary hover:text-primary transition duration-200 flex justify-center items-center"
+            >
               <FaFacebookF size={17} />
             </Link>
-            <Link className="w-[1.75rem] h-[1.75rem] bg-white rounded-full text-black hover:bg-tertiary hover:text-primary transition duration-200 flex justify-center items-center">
+            <Link
+              target="_blank"
+              to={companyDetails.twitter}
+              className="w-[1.75rem] h-[1.75rem] bg-white rounded-full text-black hover:bg-tertiary hover:text-primary transition duration-200 flex justify-center items-center"
+            >
               <FaXTwitter size={17} />
             </Link>
           </div>

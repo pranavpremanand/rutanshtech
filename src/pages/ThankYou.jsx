@@ -1,30 +1,16 @@
-import React, { useState } from "react";
-import { Divide as Hamburger } from "hamburger-react";
-import { companyDetails, logo } from "../../content/constant";
-import Drawer from "react-modern-drawer";
-import { Link, useLocation } from "react-router-dom";
-import { IoClose, IoMail } from "react-icons/io5";
-import { ImPhone } from "react-icons/im";
-import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import React from "react";
+import { companyDetails, logo } from "../content/constant";
 import { FaXTwitter } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 import { AiFillInstagram } from "react-icons/ai";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { ImPhone } from "react-icons/im";
+import { IoMail } from "react-icons/io5";
+import Footer from "../components/landingpage/Footer";
 
-// Website links
-export const websiteLinks = [
-  { id: 1, title: "Home", url: "/" },
-  { id: 2, title: "About Us", url: "/about-us" },
-  { id: 3, title: "Services", url: "/services" },
-  { id: 4, title: "Contact Us", url: "/contact-us" },
-];
-
-const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const { pathname } = useLocation();
-
-  const toggleDrawer = () => setIsOpen((prevState) => !prevState);
-
+const ThankYou = () => {
   return (
-    <>
+    <div className="flex flex-col justify-between min-h-screen">
       <div className="fixed top-0 left-0 w-full z-[100]">
         <div className="hidden md:block relative bg-white text-black">
           <div className="hidden md:grid grid-cols-[1fr_30%] lg:grid-cols-[1fr_25%] bg-white">
@@ -99,70 +85,25 @@ const Header = () => {
             >
               <img src={logo} alt="logo" className="w-[10rem] sm:w-[12rem]" />
             </a>
-
-            {/* Desktop Navigation */}
-            <div
-              data-aos="fade-down"
-              className="hidden lg:flex items-center gap-10"
-            >
-              {websiteLinks.map((link) => (
-                <Link
-                  key={link.id}
-                  to={link.url}
-                  className={`${
-                    pathname === link.url ? "text-primary" : "text-white"
-                  } link`}
-                >
-                  {link.title}
-                </Link>
-              ))}
-            </div>
-            <div data-aos="fade-down" className="hidden lg:flex">
-              <Link
-                to="/contact-us"
-                className="btn-fullrounded bg-primary text-white hover:bg-black hover:text-white border border-primary"
-              >
-                Get a Free Quote
-              </Link>
-            </div>
-
-            {/* Mobile Hamburger Button */}
-            <button data-aos="fade-down" className="lg:hidden">
-              <Hamburger toggled={isOpen} toggle={setIsOpen} size={28} />
-            </button>
           </div>
-
-          <Drawer
-            open={isOpen}
-            onClose={toggleDrawer}
-            direction="right"
-            className="py-4 px-10 z-10"
-          >
-            <div className="mb-6 flex items-center justify-end pr-[.7rem] py-[.4rem]">
-              <button
-                onClick={toggleDrawer}
-                className="text-white text-[2.2rem]"
-              >
-                <IoClose />
-              </button>
-            </div>
-            <div className="flex flex-col gap-6">
-              {websiteLinks.map(({ title, url, id }) => (
-                <Link
-                  key={id}
-                  className="text-3xl text-white font-medium transition-colors duration-300 link"
-                  to={url}
-                  onClick={toggleDrawer}
-                >
-                  {title}
-                </Link>
-              ))}
-            </div>
-          </Drawer>
         </div>
       </div>
-    </>
+
+      <section data-aos="fade-up" className="mt-[4.5rem] min-h-[70vh] flex items-center">
+        <div className="!max-w-6xl wrapper flex flex-col items-center gap-3 translate-y-[1rem] text-center">
+          <h1 className="text1">Thank You!</h1>
+          <p className="text4 mb-4 !font-normal">
+            Thank you for reaching out to us. We will get back to you as soon as
+            possible.
+          </p>
+          <Link to="/" className="btn-fullrounded bg-primary text-white min-w-[8rem] hover:bg-black border border-primary">
+            Go to Home
+          </Link>
+        </div>
+      </section>
+      <Footer />
+    </div>
   );
 };
 
-export default Header;
+export default ThankYou;

@@ -6,10 +6,10 @@ export const companyDetails = {
   phone: "+91-7567502022",
   email: "connect@RutanshTech.com",
   address: "238, SkyView Business Horizon, Surat, Gujarat, India - 395006",
-  facebook: "https://www.facebook.com/",
-  twitter: "https://twitter.com/",
-  instagram: "https://www.instagram.com/",
-  linkedin: "https://www.linkedin.com/",
+  facebook: "https://www.facebook.com/RutanshTech",
+  twitter: "https://x.com/RutanshTech",
+  instagram: "https://www.instagram.com/RutanshTech",
+  linkedin: "https://www.linkedin.com/company/RutanshTech",
 };
 
 export const testimonials = [
