@@ -3,6 +3,7 @@ import SubHeading from "../common/SubHeading";
 import { allServices } from "../../content/services";
 import { Link } from "react-router-dom";
 import { MdArrowOutward } from "react-icons/md";
+import { createUrlParam } from "../../utils/helper";
 
 const AllServices = ({ length }) => {
   const services = allServices.slice(0, length);
@@ -33,17 +34,24 @@ const AllServices = ({ length }) => {
                 </div>
                 <h4 className="text3">{item.title}</h4>
                 <p className="desc">{item.desc}</p>
-                {item.link && (
-                  <div className="pt-5">
+                <div className={`pt-5 grid gap-5 sm:grid-cols-2`}>
+                  <Link
+                    className="btn-rounded !p-2 border border-white text-white hover:bg-white hover:text-black flex items-center gap-2 w-full justify-center h-fit"
+                    to={`/services/${createUrlParam(item.title)}`}
+                    target="_blank"
+                  >
+                    Read in Detail <MdArrowOutward size={20} />
+                  </Link>
+                  {item.link && (
                     <Link
-                      className="btn-rounded !p-1 border border-white text-white hover:bg-white hover:text-black flex items-center gap-2 w-fit"
+                      className="btn-rounded !p-2 border border-white text-black bg-white hover:bg-black hover:text-white flex items-center gap-2 w-full justify-center h-fit"
                       to={item.link}
                       target="_blank"
                     >
-                      Learn More <MdArrowOutward size={20}/>
+                      Explore
                     </Link>
-                  </div>
-                )}
+                  )}
+                </div>
               </div>
             </div>
           ))}

@@ -7,11 +7,12 @@ import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaXTwitter } from "react-icons/fa6";
 import NewsLetter from "../common/NewsLetter";
+import { createUrlParam } from "../../utils/helper";
 
 const Footer = () => {
   return (
     <div className="pt-7">
-      <NewsLetter />
+      {/* <NewsLetter /> */}
       <div
         className="bg-cover bg-no-repeat bg-center pt-[5rem] pb-7 space-y-8"
         style={{ backgroundImage: `url(${bgImg})` }}
@@ -90,13 +91,12 @@ const Footer = () => {
               <ul className="flex flex-col gap-3 list-disc pl-5">
                 {allServices.map((item) => (
                   <li key={item.id}>
-                    {item.link ? (
-                      <Link to={item.link} className="link text-sm">
-                        {item.title}
-                      </Link>
-                    ) : (
-                      <span className="text-sm">{item.title}</span>
-                    )}
+                    <Link
+                      to={`/services/${createUrlParam(item.title)}`}
+                      className="link text-sm"
+                    >
+                      {item.title}
+                    </Link>
                   </li>
                 ))}
               </ul>

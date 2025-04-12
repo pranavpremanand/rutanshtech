@@ -9,7 +9,7 @@ import NewsLetter from "../common/NewsLetter";
 const Footer = () => {
   return (
     <div className="pt-7">
-      <NewsLetter />
+      {/* <NewsLetter /> */}
       <div
         className="bg-cover bg-no-repeat bg-center pt-[5rem] pb-7 space-y-8"
         style={{ backgroundImage: `url(${bgImg})` }}

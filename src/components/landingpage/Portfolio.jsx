@@ -23,7 +23,7 @@ const Portfolio = ({ page }) => {
         {portfolio.map((item) => (
           <div
             key={item.id}
-            className="rounded-lg w-[calc(100%/2-1rem] md:w-[calc(100%/3-1rem)] lg:w-[calc(100%/4-1rem)] aspect-square overflow-hidden relative group"
+            className="rounded-lg w-[calc(100%/2-1rem)] md:w-[calc(100%/3-1rem)] lg:w-[calc(100%/4-1rem)] aspect-square overflow-hidden relative group"
           >
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-primary/50 via-transparent to-primary/50 z-[1]" />
             <img

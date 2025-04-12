@@ -17,7 +17,10 @@ const OurServices = () => {
       <div className="pt-7">
         <AllServices />
         <div className="wrapper flex justify-center">
-          <ArrowButton className="border border-primary hover:bg-primary">
+          <ArrowButton
+            to="/contact-us"
+            className="border border-primary hover:bg-primary"
+          >
             Let's Build Your Success Together
           </ArrowButton>
         </div>
