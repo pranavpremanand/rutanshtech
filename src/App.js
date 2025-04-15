@@ -15,6 +15,8 @@ const Layout = lazy(() => import("./components/website/Layout"));
 const AboutUs = lazy(() => import("./pages/AboutUs"));
 const OurServices = lazy(() => import("./pages/OurServices"));
 const ServiceDetails = lazy(() => import("./pages/ServiceDetails"));
+const Blogs = lazy(() => import("./pages/Blogs"));
+const BlogDetails = lazy(() => import("./pages/BlogDetails"));
 const ContactUs = lazy(() => import("./pages/ContactUs"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const LandingPage = lazy(() => import("./pages/LandingPage"));
@@ -38,6 +40,8 @@ function App() {
             <Route path="/" element={<Layout />}>
               <Route index element={<Home />} />
               <Route path="about-us" element={<AboutUs />} />
+              <Route path="blogs" element={<Blogs />} />
+              <Route path="/blogs/:slug" element={<BlogDetails />} />
               <Route path="services" element={<OurServices />} />
               <Route path="services/:page" element={<ServiceDetails />} />
               <Route path="contact-us" element={<ContactUs />} />

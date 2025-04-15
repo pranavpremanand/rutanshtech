@@ -14,7 +14,8 @@ export const websiteLinks = [
   { id: 1, title: "Home", url: "/" },
   { id: 2, title: "About Us", url: "/about-us" },
   { id: 3, title: "Services", url: "/services" },
-  { id: 4, title: "Contact Us", url: "/contact-us" },
+  { id: 4, title: "Blogs", url: "/blogs" },
+  { id: 5, title: "Contact Us", url: "/contact-us" },
 ];
 
 const Header = () => {
